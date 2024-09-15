@@ -10,7 +10,7 @@ import {
   reactjs,
   redux,
   tailwind,
-  nodejs,
+  mysql,
   mongodb,
   git,
   figma,
@@ -42,21 +42,18 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Web Developement",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "AI",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Data Science",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+  }
+  
 ];
 
 const technologies = [
@@ -81,16 +78,12 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "MySQL",
+    icon: mysql,
   },
   {
     name: "MongoDB",
@@ -103,15 +96,7 @@ const technologies = [
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  }
 ];
 
 const experiences = [
@@ -198,67 +183,75 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Project Management System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web Based project that allows Project Managers, Team Memebrs, Stakeholders and Clients manage their project timelines, resources, manage task schedules and set their milestones.  ",
     tags: [
       {
-        name: "react",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "mysql ",
         color: "green-text-gradient",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
+      {
+        name: "javascript",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/Mavra-Iqbal-Muccadam/Project-Management-System.git",
+  },
+  {
+    name: "AI Desktop Virtual Assistant",
+    description:
+      "AI Desktop Virtaul Assistant, the speech project is build in python usinf various libraries that offers numerous functionalities like world clock, jokes, optimized google searches, calculator, wikipedia personlized search, youtube, stackoverflow, github, instagram, google classroom, netflix, vs code editor, gmail, notepad, weather, whatsapp messaging ,language translator, playing personalized songs both online and offline and lastly motivation for users. This Project is build to automate user needs by communicating with user friendly interface made in tkinter",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tkinter",
+        color: "green-text-gradient",
+      },
+      {
+        name: "speech-recognition",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/Mavra-Iqbal-Muccadam/AI-Desktop-Virtual-Assistant.git",
+  },
+  {
+    name: "Amazon Clone",
+    description:
+      "An amazon clone made in html, css and javascript. This is a beginner responsive project focusing on basic concepts in web developement ",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "orange-text-gradient",
+      },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Mavra-Iqbal-Muccadam/Amazon-Clone.git",
   },
 ];
 
