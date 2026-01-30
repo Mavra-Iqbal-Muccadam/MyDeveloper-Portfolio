@@ -13,17 +13,14 @@ import {
   mysql,
   mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
 } from "../assets";
+import exclerate from "../assets/company/exclerate.png";
+import empower from "../assets/company/empower.png";
+import plural from "../assets/company/plural.png";
 
 export const navLinks = [
   {
@@ -52,8 +49,7 @@ const services = [
   {
     title: "Data Science",
     icon: backend,
-  }
-  
+  },
 ];
 
 const technologies = [
@@ -96,60 +92,47 @@ const technologies = [
   {
     name: "git",
     icon: git,
-  }
+  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Data Analyst",
+    company_name: "Exclerate",
+    icon: exclerate,
+    iconBg: "white",
+    date: "March 2025 - April 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Analyzed Facebook ad campaign data for GlobalShala's Superhero U event to generate actionable insights.",
+      "Developed impactful data visualizations to support decision-making and strategy optimization.",
+      "Presented findings to the Finance team to help optimize ad spend and improve ROI.",
+      "Strengthened analytical skills and enhanced collaboration abilities within a remote team using various visualization tools.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Backend Developer",
+    company_name: "EmpowerED Pakistan",
+    icon: empower,
+    iconBg: "white",
+    date: "September 2025 - October 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and integrated RESTful APIs to connect frontend interfaces with the backend.",
+      "Ensured seamless data flow and enhanced application functionality across the platform.",
+      "Updated and optimized MongoDB schemas through data modeling, insertion, and modification processes.",
+      "Managed database operations to support new and evolving application features.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "React Developer",
+    company_name: "Plural Dynamics",
+    icon: plural,
+    iconBg: "white",
+    date: "September 2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop responsive, component-based web applications with a focus on performance optimization.",
+      "Collaborate with design and product teams to translate mockups into interactive interfaces.",
+      "Integrate APIs and maintain scalable, clean code following best front-end development practices.",
+      "Ensure cross-device responsiveness and seamless user experience across all platforms.",
     ],
   },
 ];
@@ -205,7 +188,8 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/Mavra-Iqbal-Muccadam/Project-Management-System.git",
+    source_code_link:
+      "https://github.com/Mavra-Iqbal-Muccadam/Project-Management-System.git",
   },
   {
     name: "AI Desktop Virtual Assistant",
@@ -226,7 +210,8 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/Mavra-Iqbal-Muccadam/AI-Desktop-Virtual-Assistant.git",
+    source_code_link:
+      "https://github.com/Mavra-Iqbal-Muccadam/AI-Desktop-Virtual-Assistant.git",
   },
   {
     name: "Amazon Clone",
@@ -251,7 +236,29 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/Mavra-Iqbal-Muccadam/Amazon-Clone.git",
+    source_code_link:
+      "https://github.com/Mavra-Iqbal-Muccadam/Amazon-Clone.git",
+  },
+  {
+    name: "AI health web App",
+    description:
+      "Velora is a health and wellness platform guiding users on a transformative journey to better health. With the mission “Restore Balance. Embrace Life,” Velora offers personalized solutions for health goals, dietary preferences, and fitness levels. Using AI, it dynamically creates meal plans and exercise routines that adapt to evolving needs, simplifying the path to balanced living and lasting well-being ",
+    tags: [
+      {
+        name: "next.js ",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/ErajT/dietician-AI.git",
   },
 ];
 

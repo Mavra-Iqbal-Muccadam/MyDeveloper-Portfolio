@@ -8,10 +8,10 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      className="w-full p-[2px] rounded-[16px] bg-gradient-to-r from-accent to-accent-dark"
     >
       <div
         options={{
@@ -19,15 +19,17 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className="bg-tertiary rounded-[14px] py-6 px-8 min-h-[240px] flex justify-between items-center flex-col hover:shadow-card transition-shadow"
       >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
+        <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center">
+          <img
+            src={icon}
+            alt="web-development"
+            className="w-12 h-12 object-contain"
+          />
+        </div>
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className="text-white text-[18px] font-bold text-center mt-4">
           {title}
         </h3>
       </div>
@@ -39,26 +41,27 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>Get To Know Me</p>
+        <h2 className={styles.sectionHeadText}>About.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-justify text-[18px] max-w-100% leading-[30px]'
+        className="mt-6 text-secondary text-justify text-[16px]  leading-[28px]"
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a skilled full-stack developer with expertise in React, Node.js, and
+        modern web technologies. I specialize in building scalable,
+        user-friendly applications that solve real-world problems. With a strong
+        foundation in TypeScript and JavaScript, I create efficient solutions by
+        collaborating closely with clients and teams. Passionate about clean
+        code and continuous learning.
       </motion.p>
 
-      <div className='mt-20 flex justify-evenly gap-5 '>
+      {/* <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };

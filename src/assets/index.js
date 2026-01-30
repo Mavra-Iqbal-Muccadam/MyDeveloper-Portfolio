@@ -25,6 +25,9 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import plural from "./company/plural.jpeg";
+import empower from "./company/empower.jpeg";
+import exclerate from "./company/exclerate.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -56,6 +59,9 @@ export {
   shopify,
   starbucks,
   tesla,
+  plural,
+  empower,
+  exclerate,
   carrent,
   jobit,
   tripguide,
